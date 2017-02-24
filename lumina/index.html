@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumina Text</title>
+    <link rel="stylesheet" href="css/Lumina-Fonts.min.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+   <style>
+       hr {
+           height: 2px;
+           border-radius: 5px;
+           background: #000;
+           border: 0;
+       }
+       .header {
+           border-bottom: solid 1px lightgray;
+           position: fixed;
+           width: 100%;
+           height: 4.6em;
+           background: white;
+           top: 0;
+           z-index: 99999;
+           left: 0;
+       }
+       .header .caption {
+           position: absolute;
+           left: 10px;
+           top: 5px;
+       }
+       .header ul {
+           text-align: right;
+       }
+       .header ul li {
+           display: inline-block;
+           margin: 1px 20px;
+       }
+       button {
+           border: 1px solid #868686;
+           background: #f4f4f4;
+           width: 8em;
+           height: 3em;
+       }
+       button:hover {
+           background: #ededed;
+           cursor: pointer;
+       }
+       .content {
+            position: relative;
+            top: 4.6em;
+       }
+       .footer {
+           border-top: solid 1px lightgray;
+           display: table;
+           width: 100%;
+           height: 3em;
+       }
+       .footer a {
+           display: table-cell;
+           text-decoration: none;
+           vertical-align: middle;
+           cursor: pointer;
+       }
+       @media screen and (max-width:600px){
+           .header ul {               ;
+               text-align: center;
+           }
+           .header ul li {
+               margin: 1px 1px;
+               position: relative;
+               left: -1em;
+           }
+           .header .caption {
+                visibility: hidden;
+           }
+       }
+   </style>
+    <div class="header">
+       <h3 class="caption">Lumina Text</h3>
+        <ul>
+            <li><button onclick="window.location.href='./downloads/Lumina-Fonts.zip'">Download</button></li>
+            <li><button onclick="window.location.href='https://github.com/AlexScripts/lumina' ">GitHub</button></li>
+        </ul>
+    </div>
+    <div class="content">
+    <h1>This is an h1 header</h1>
+    <h2>This is an h2 header</h2>  
+    <h3>This is an h3 header</h3>
+    <h4>This is an h4 header</h4>  
+    <h5>This is an h5 header</h5>
+    <h6>This is an h6 header</h6>
+    <hr>
+    <p class="text-light text-hint-container">This is an text-light<span class="text-hint">.text-light</span></p>
+    <p class="text-bolder text-hint-container">This is an text-bolder<span class="text-hint">.text-bolder</span></p>
+    <p class="text-bold text-hint-container">This is an text-bold<span class="text-hint">.text-bold</span></p>
+    <hr>
+    <h4 class="text-hint-container">Responsive text scale:<span class="text-hint">.text-size-[size(1-10)]</span></h4>
+    <p class="text-size-1">This is an 1-scaled font, text-size-1</p>    
+    <p class="text-size-2">This is an 2-scaled font, text-size-2</p>
+    <p class="text-size-3">This is an 3-scaled font, text-size-3</p>
+    <p class="text-size-4">This is an 4-scaled font, text-size-4</p>
+    <p class="text-size-5">This is an 5-scaled font, text-size-5</p>
+    <p class="text-size-6">This is an 6-scaled font, text-size-6</p>
+    <p class="text-size-7">This is an 7-scaled font, text-size-7</p>
+    <p class="text-size-8">This is an 8-scaled font, text-size-8</p>
+    <p class="text-size-9">This is an 9-scaled font, text-size-9</p>
+    <p class="text-size-10">This is an 10-scaled font, text-size-10</p>
+    <hr>
+    <h4 class="text-hint-container">Many colors:<span class="text-hint">.text-color-[color]</span></h4>
+    <p class="text-color-turquoise">Turquoise color</p>
+    <p class="text-color-green">Green color</p>
+    <p class="text-color-sun">Sun color</p> 
+    <p class="text-color-orange">Orange color</p>  
+    <p class="text-color-emerald">Emerald color</p>
+    <p class="text-color-nephritis">Nephritis color</p>
+    <p class="text-color-carrot">Carrot color</p>
+    <p class="text-color-pumpkin">Pumpkin color</p>
+    <p class="text-color-river">River color</p>
+    <p class="text-color-belize">Belize color</p>
+    <p class="text-color-alizarin">Alizarin color</p>
+    <p class="text-color-pomegranate">Pomegranate color</p> 
+    <p class="text-color-amethyst">Amethyst color</p>
+    <p class="text-color-wisteria">Wisteria color</p>
+    <p class="text-color-clouds">Clouds color</p>
+    <p class="text-color-silver">Silver color</p>
+    <p class="text-color-asphalt">Asphalt color</p>
+    <p class="text-color-midnight">Midnight color</p>
+    <p class="text-color-concrete">Concrete color</p>
+    <p class="text-color-asbestos">Asbestos Gray color</p>
+    <hr>
+    <h4 class="text-hint-container">Link style: <span class="text-hint">&lt;a&gt;</span></h4>
+    <a href="#">Link</a>
+    <br>
+    <a href="#" class="text-size-1">Link with custom size</a>
+    <hr>
+    <h4 class="text-hint-container">Text hint on hover: <span class="text-hint">.text-hint-container, .text-hint</span></h4>
+    <p class="text-hint-container">Buy car<span class="text-hint">by $1000</span></p> 
+    <p class="text-hint-container">Buy boat<span class="text-hint">by $2000</span></p>
+    <hr>
+    <h4 class="text-hint-container">Horizontal-Centered text: <span class="text-hint">.text-centered</span></h4>
+    <p class="text-centered text-light">Hello World</p>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-centered text-light">To be continued...</h2>
+    <div id="github" class="footer text-centered">
+        <a href="https://github.com/AlexScripts/lumina">Fork on GitHub</a>
+    </div>
+    </div>
+</body>
+</html>
