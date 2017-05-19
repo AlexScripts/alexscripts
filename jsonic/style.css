@@ -1,0 +1,42 @@
+body {
+    font-family: "Roboto";
+    margin: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    width: 200px;
+    cursor: pointer
+}
+
+.after-heading {
+    font-weight: 300;
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background: lightgray;
+    outline: none;
+    border: 1px solid gray;
+    transition: background .2s, color .3s;
+}
+
+.btn:hover {
+    background: gray;
+    color: white
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+}
